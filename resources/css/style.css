@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 header {
@@ -8,21 +9,23 @@ header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 98%;
+  width: 100%;
   height: 64px;
   padding-left: 24px;
   padding-right: 8px;
   z-index: 10;
   top: 0;
   background-color: white;
-  border-bottom: 2px solid darkblue;
+  border-bottom: 2px solid navy;
 
 }
- .logo {
-   display: flex;
+  .logo {
+   display: inline-flex;
    flex-direction: row;
    align-items: center;
    height: 32px;
+   margin-left: 24px;
+
  }
 
 .logo p {
@@ -35,14 +38,14 @@ header {
   color: gold;
 }
 
- .menu {
-   display: flex;
+ nav {
+   display: inline-flex;
    flex-direction: row;
-
  }
 
-.menu p {
+nav a {
   padding-right: 16px;
+  text-decoration: none;
   font-size: 18px;
   color: darkblue;
   font-weight: bold;
@@ -54,7 +57,7 @@ header {
   position: relative;
   width: 100%;
   height: 600px;
-  top: 50px;
+  top: 70px;
   background-color: lightyellow;
   border-bottom: 2px solid darkblue;
 }
@@ -70,6 +73,7 @@ header {
 .motto h1 {
   font-size: 42px;
   color: darkblue;
+  margin-bottom: 12px;
 }
 
 .motto p {
@@ -91,12 +95,12 @@ header {
 
 }
 
-.button {
+ button {
   display: block;
   background-color: navy;
   color: lightblue;
-  width: 75%;
-  height: 40px;
+  width: 45%;
+  height: 50px;
   text-align: center;
   font-size: 24px;
   padding-top: 8px;
@@ -111,13 +115,13 @@ header {
   position: relative;
   width: 100%;
   height: 700px;
-  top: 50px;
+  top: 70px;
 }
 
 .practice-block {
   display: flex;
   flex-direction: column;
-  max-width: 63%;
+  max-width: 65%;
 }
 .practice-block img {
   object-position: center;
@@ -126,8 +130,9 @@ header {
   height: 60%;
 }
 
-.practice-block h2, .practice-block p {
+.practice-block h3, .practice-block p {
   padding-left: 24px;
+  max-width: 97%;
 }
 .guide-block {
   display: flex;
@@ -139,6 +144,7 @@ header {
 .orientation {
   display: flex;
   flex-direction: row;
+  height: 30%;
 
 }
 .orientation img {
@@ -151,7 +157,55 @@ header {
 .info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: flex-start;
-  width: 65%;
+  max-width: 60%;
+  margin-right: 24px;
+}
+
+
+.learning-courses {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-around;
+  align-items: baseline;
+  margin: 0 auto;
+  top: 100px;
+  width: 100%;
+  margin-left: 26px;
+  margin-top: 0px;
+
+
+}
+.course-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 30%;
+  height: auto;
+  margin-bottom: 20px;
+
+}
+
+.course-name img {
+  width: 85%;
+  height: auto;
+  margin-bottom: 18px;
+
+}
+
+ .info h3, .course-name h3, .practice-block h3 {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+.course-name p {
+  max-width: 85%;
+  margin-bottom: 18px;
+}
+.info p, .info a, .course-name p, .practice-block p {
+  font-size: 18px;
+  text-decoration: none;
 }
