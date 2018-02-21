@@ -9,7 +9,7 @@ header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 100%;
+  width: 98%;
   height: 64px;
   padding-left: 24px;
   padding-right: 8px;
@@ -24,7 +24,7 @@ header {
    flex-direction: row;
    align-items: center;
    height: 32px;
-   margin-left: 24px;
+
 
  }
 
@@ -39,12 +39,13 @@ header {
 }
 
  nav {
-   display: inline-flex;
-   flex-direction: row;
+   display: inline-block;
+
  }
 
 nav a {
-  padding-right: 16px;
+
+  padding-right: 18px;
   text-decoration: none;
   font-size: 18px;
   color: darkblue;
@@ -72,7 +73,6 @@ nav a {
 
 .motto h1 {
   font-size: 42px;
-  color: darkblue;
   margin-bottom: 12px;
 }
 
@@ -108,6 +108,9 @@ nav a {
   justify-content: center;
 
 }
+.title {
+  color: navy;
+}
 
 .informational-container {
   display: flex;
@@ -131,20 +134,23 @@ nav a {
 }
 
 .practice-block h3, .practice-block p {
+  margin-top: 0px;
   padding-left: 24px;
-  max-width: 97%;
+  max-width: 95%;
 }
 .guide-block {
   display: flex;
   flex-direction: column;
   width: 37%;
-  margin-top: 16px;
+  margin-top: 32px;
   margin-bottom: 16px;
 }
 .orientation {
   display: flex;
   flex-direction: row;
+  width: 99%;
   height: 30%;
+  border: 1px solid navy;
 
 }
 .orientation img {
@@ -157,55 +163,59 @@ nav a {
 .info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   max-width: 60%;
   margin-right: 24px;
 }
 
+span {
+  display: block;
+  text-align: center;
+  font-size: 42px;
+  font-weight: bold;
+}
 
 .learning-courses {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   position: relative;
-  justify-content: space-around;
   align-items: baseline;
-  margin: 0 auto;
-  top: 100px;
-  width: 100%;
-  margin-left: 26px;
-  margin-top: 0px;
+  top: 80px;
+  width: 90%;
+  margin-left: 68px;
 
 
 }
 .course-name {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-  width: 30%;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 32%;
   height: auto;
-  margin-bottom: 20px;
-
+  margin: 0 auto;
+  padding: 0;
+  height: auto;
+  margin-bottom: 22px;
 }
 
-.course-name img {
-  width: 85%;
-  height: auto;
-  margin-bottom: 18px;
 
+.course-name img, .course-name h3, .course-name p, .course-name a {
+  margin-left: 32px;
+  width: 90%;
+  height: auto;
 }
 
  .info h3, .course-name h3, .practice-block h3 {
   font-size: 28px;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 }
-.course-name p {
-  max-width: 85%;
-  margin-bottom: 18px;
-}
-.info p, .info a, .course-name p, .practice-block p {
+
+.info p, .info a, .course-name p, .course-name a, .practice-block p {
   font-size: 18px;
   text-decoration: none;
+  margin-bottom: 12px;
+
 }
