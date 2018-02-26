@@ -1,6 +1,11 @@
 body {
   margin: 0;
   overflow-x: hidden;
+  background-color: #F8C9A9;
+}
+
+html {
+  font-family:
 }
 
 header {
@@ -15,41 +20,48 @@ header {
   padding-right: 8px;
   z-index: 10;
   top: 0;
-  background-color: white;
-  border-bottom: 2px solid navy;
-
+  background-color: #FFFFE9;
+  border-bottom: 10px groove #54292D;
+  border-radius: 10px;
+  box-shadow: 30px 0 25px;
 }
+
   .logo {
    display: inline-flex;
    flex-direction: row;
    align-items: center;
    height: 32px;
-
-
  }
 
 .logo p {
   font-size: 22px;
-  color: darkblue;
+  color: #21C3B0;
 }
 
 .logo span {
   font-size: 22px;
-  color: gold;
+  color: #54292D;
+  font-weight: normal;
+  margin-top: 0px;
 }
 
  nav {
    display: inline-block;
-
  }
 
 nav a {
-
   padding-right: 18px;
   text-decoration: none;
   font-size: 18px;
-  color: darkblue;
+  color: #A26E53;
   font-weight: bold;
+}
+
+nav a:hover {
+  /*font-size: 22px;
+  text-decoration: underline;*/
+  border: 2px solid transparent;
+  box-shadow: 4px 4px 8px;
 }
 
 .banner {
@@ -59,8 +71,7 @@ nav a {
   width: 100%;
   height: 600px;
   top: 70px;
-  background-color: lightyellow;
-  border-bottom: 2px solid darkblue;
+
 }
 
 .motto {
@@ -74,31 +85,34 @@ nav a {
 .motto h1 {
   font-size: 42px;
   margin-bottom: 12px;
+  text-align: left;
 }
 
 .motto p {
   font-size: 24px;
   font-style: italic;
-  color: lightblue;
+  color: #A26E53;
   padding-bottom: 30px;
   max-width: 75%;
 }
 
 .banner img {
-  width: 60%;
+  width: 61%;
   object-fit: cover;
   object-position: center;
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 24px;
-  padding-right: 46px;
-
+  padding-right: 24px;
+  margin-right: 46px;
+  box-shadow: 5px 5px 15px #54292D;
+  border-radius: 5%;
 }
 
  button {
   display: block;
-  background-color: navy;
-  color: lightblue;
+  background-color: #A26E53;
+  color: #21C3B0;
   width: 45%;
   height: 50px;
   text-align: center;
@@ -106,19 +120,45 @@ nav a {
   padding-top: 8px;
   padding-bottom: 8px;
   justify-content: center;
+  box-shadow: 5px 5px 15px;
+  opacity: .5;
 
 }
+
+button:hover {
+  border-radius: 10px;
+  opacity: 1;
+  height: 60px;
+  font-size: 28px;
+}
+
 .title {
-  color: navy;
+  color: #0E4F63;
 }
 
 .informational-container {
   display: flex;
   flex-direction: row;
-  position: relative;
   width: 100%;
-  height: 700px;
-  top: 70px;
+  height: 650px;
+  padding-bottom: 32px;
+}
+
+.second-banner {
+  position: relative;
+    top: 90px;
+}
+
+.exhibit {
+  position: relative;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+}
+
+.thesis {
+  margin: 0 auto;
 }
 
 .practice-block {
@@ -126,11 +166,24 @@ nav a {
   flex-direction: column;
   max-width: 65%;
 }
-.practice-block img {
+
+.practice-block img  {
   object-position: center;
   object-fit: cover;
-  padding: 32px 26px;
+  padding: 30px 24px;
   height: 60%;
+  margin-bottom: 32px;
+  margin-right: 8px;
+  width: auto;
+  box-shadow: 5px 5px 15px #54292D;
+  border-radius: 5%;
+}
+
+.practice-block video {
+  margin: 0px 26px 32px 26px;
+  width: 94%;
+  height: auto;
+  box-shadow: 10px 10px 15px #54292D;
 }
 
 .practice-block h3, .practice-block p {
@@ -138,6 +191,7 @@ nav a {
   padding-left: 24px;
   max-width: 95%;
 }
+
 .guide-block {
   display: flex;
   flex-direction: column;
@@ -145,14 +199,18 @@ nav a {
   margin-top: 32px;
   margin-bottom: 16px;
 }
+
 .orientation {
   display: flex;
   flex-direction: row;
   width: 99%;
   height: 30%;
-  border: 1px solid navy;
-
 }
+
+.fisma {
+  margin-top: 40px;
+}
+
 .orientation img {
   width: 35%;
   height: auto;
@@ -160,6 +218,7 @@ nav a {
   object-fit: cover;
   padding: 16px;
 }
+
 .info {
   display: flex;
   flex-direction: column;
@@ -169,11 +228,21 @@ nav a {
   margin-right: 24px;
 }
 
-span {
+h1 {
   display: block;
   text-align: center;
   font-size: 42px;
   font-weight: bold;
+  margin: 0 auto;
+  margin: 32px 0px;
+}
+
+.start-learning {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 70px;
+  background-color: #ECC7A6;
 }
 
 .learning-courses {
@@ -182,18 +251,19 @@ span {
   flex-wrap: wrap;
   position: relative;
   align-items: baseline;
-  top: 80px;
   width: 90%;
   margin-left: 68px;
-
+  padding-bottom: 32px;
 
 }
+
 .course-name {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  width: 32%;
+  width: 33%;
   height: auto;
   margin: 0 auto;
   padding: 0;
@@ -201,21 +271,59 @@ span {
   margin-bottom: 22px;
 }
 
+.orientation:hover, .course-name:hover {
+  background-color:  #FCDEBF;
+  border: 2px solid transparent;
+  box-shadow: 5px 5px 20px #54292D;
+  border-radius: 5%;
+}
 
 .course-name img, .course-name h3, .course-name p, .course-name a {
-  margin-left: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
   width: 90%;
   height: auto;
 }
 
- .info h3, .course-name h3, .practice-block h3 {
+ h3 {
   font-size: 28px;
   margin-bottom: 12px;
 }
 
-.info p, .info a, .course-name p, .course-name a, .practice-block p {
+ a, p {
   font-size: 18px;
   text-decoration: none;
-  margin-bottom: 12px;
+}
 
+  a {
+  color: #21C3B0;
+}
+
+ a:hover {
+  font-size: 20px;
+}
+
+p {
+  color:  #A26E53;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 32px;
+  background-color: #ECC7A6;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+.terms a {
+  margin-left: 16px;
+  padding-top: 16px;
+  font-size: 14px;
 }
