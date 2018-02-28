@@ -5,7 +5,8 @@ body {
 }
 
 html {
-  font-family:
+  font-family: "Abel", "Arial", sans-serif;
+  font-size: 18px;
 }
 
 header {
@@ -34,16 +35,21 @@ header {
  }
 
 .logo p {
-  font-size: 22px;
+  font-size: 1.25rem;
   color: #21C3B0;
 }
 
 .logo span {
-  font-size: 22px;
+  font-size: 1.25rem;
   color: #54292D;
   font-weight: normal;
   margin-top: 0px;
 }
+
+.logo img, .logo i {
+  color: #54292D;
+}
+
 
  nav {
    display: inline-block;
@@ -52,14 +58,12 @@ header {
 nav a {
   padding-right: 18px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1rem;
   color: #A26E53;
   font-weight: bold;
 }
 
 nav a:hover {
-  /*font-size: 22px;
-  text-decoration: underline;*/
   border: 2px solid transparent;
   box-shadow: 4px 4px 8px;
 }
@@ -71,7 +75,6 @@ nav a:hover {
   width: 100%;
   height: 600px;
   top: 70px;
-
 }
 
 .motto {
@@ -83,13 +86,14 @@ nav a:hover {
 }
 
 .motto h1 {
-  font-size: 42px;
+  font-size: 2.35rem;
   margin-bottom: 12px;
   text-align: left;
 }
 
 .motto p {
-  font-size: 24px;
+  font-size: 1.35rem;
+  font-family: "Indie Flower", "Bellefair", serif;
   font-style: italic;
   color: #A26E53;
   padding-bottom: 30px;
@@ -116,12 +120,14 @@ nav a:hover {
   width: 45%;
   height: 50px;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.35rem;
   padding-top: 8px;
   padding-bottom: 8px;
   justify-content: center;
   box-shadow: 5px 5px 15px;
   opacity: .5;
+  transition: all 0.75s ease-in 0.25s;
+
 
 }
 
@@ -129,7 +135,8 @@ button:hover {
   border-radius: 10px;
   opacity: 1;
   height: 60px;
-  font-size: 28px;
+  font-size: 1.55rem;
+
 }
 
 .title {
@@ -146,7 +153,7 @@ button:hover {
 
 .second-banner {
   position: relative;
-    top: 90px;
+  top: 90px;
 }
 
 .exhibit {
@@ -154,7 +161,7 @@ button:hover {
   top: 60px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 32px;
+  padding-bottom: 48px;
 }
 
 .thesis {
@@ -192,6 +199,10 @@ button:hover {
   max-width: 95%;
 }
 
+.practice-block p {
+  font-family: "Indie Flower";
+}
+
 .guide-block {
   display: flex;
   flex-direction: column;
@@ -203,12 +214,18 @@ button:hover {
 .orientation {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   width: 99%;
   height: 30%;
+  transition: all 1s ease-out 0.1s;
 }
 
 .fisma {
-  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.now-and-then {
+  margin-top: 20px;
 }
 
 .orientation img {
@@ -223,15 +240,16 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: baseline;
   max-width: 60%;
+  max-height: 29%;
   margin-right: 24px;
 }
 
 h1 {
   display: block;
   text-align: center;
-  font-size: 42px;
+  font-size: 2.35rem;
   font-weight: bold;
   margin: 0 auto;
   margin: 32px 0px;
@@ -269,6 +287,7 @@ h1 {
   padding: 0;
   height: auto;
   margin-bottom: 22px;
+  transition: all 1s ease-out 0.1s;
 }
 
 .orientation:hover, .course-name:hover {
@@ -286,21 +305,22 @@ h1 {
 }
 
  h3 {
-  font-size: 28px;
+  font-size: 1.5rem;
   margin-bottom: 12px;
 }
 
  a, p {
-  font-size: 18px;
+  font-size: 1rem;
   text-decoration: none;
 }
 
   a {
   color: #21C3B0;
+  transition: all 0.5s linear 0.2s;
 }
 
  a:hover {
-  font-size: 20px;
+  font-size: 1.15rem;
 }
 
 p {
@@ -314,16 +334,19 @@ footer {
   align-items: baseline;
   padding-left: 24px;
   padding-right: 24px;
-  padding-bottom: 32px;
+  padding-bottom: 48px;
   background-color: #ECC7A6;
 }
 
 footer p {
-  font-size: 14px;
+  font-size: 0.75rem;
 }
 
-.terms a {
+.terms a  {
   margin-left: 16px;
   padding-top: 16px;
-  font-size: 14px;
+  font-size: 0.75rem;
+}
+.terms i {
+  color: #54292D;
 }
